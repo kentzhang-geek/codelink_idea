@@ -7,12 +7,14 @@
     <depends>com.intellij.modules.platform</depends>
 
     <resource-bundle>messages.MyBundle</resource-bundle>
-
-    <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.kentzhanggeek.codelinkidea.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
-    </extensions>
-
-    <applicationListeners>
-        <listener class="com.github.kentzhanggeek.codelinkidea.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
-    </applicationListeners>
+    
+    <actions>
+        <action id="CodeLinkOpen" class="com.github.kentzhanggeek.codelinkidea.CodeLinkOpen" text="CodeLink Goto" description="Action triggered by hotkey">
+            <keyboard-shortcut first-keystroke="alt g" keymap="$default" replace-all="true"/>
+        </action>
+        <action id="CodeLinkGenerate" class="com.github.kentzhanggeek.codelinkidea.CodeLinkGenerate" text="CodeLink Generate" description="Action to generate CodeLink URL">
+            <keyboard-shortcut first-keystroke="alt c" keymap="$default" replace-all="true"/>
+        </action>
+    </actions>
+    
 </idea-plugin>
