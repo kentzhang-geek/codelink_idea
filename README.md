@@ -1,6 +1,11 @@
 # CodeLink IDEA
 
+
 CodeLink IDEA is an IntelliJ IDEA plugin that allows developers to generate and navigate to code links. These code links are URLs that point to a specific line in a specific file in your project.
+
+<!-- Plugin description -->
+CodeLink IDEA is an IntelliJ IDEA plugin that allows developers to generate and navigate to code links. These code links are URLs that point to a specific line in a specific file in your project.
+<!-- Plugin description end -->
 
 ## Features
 
