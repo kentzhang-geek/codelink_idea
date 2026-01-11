@@ -8,6 +8,7 @@ changelog = "2.2.0"
 gradleIntelliJPlugin = "1.17.2"
 qodana = "2024.1.8"
 kover = "0.7.6"
+intelliJPlatform = "2.0.1"
 
 
 [libraries]
