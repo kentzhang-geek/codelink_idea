@@ -36,3 +36,24 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## License
 
 This project is licensed under the terms of the MIT license.
+
+## Build and package
+
+You can build a distributable plugin ZIP locally with:
+
+```bash
+./gradlew buildPlugin
+```
+
+The artifact is generated under `build/distributions/*.zip`.
+
+Or use the helper script to optionally bump version and package in one step:
+
+```bash
+# package with current version
+./scripts/package-plugin.sh
+
+# bump version then package
+./scripts/package-plugin.sh 0.0.3
+```
+
