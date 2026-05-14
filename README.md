@@ -1,10 +1,10 @@
-# CodeLink IDEA
+# CodeLink
 
 
-CodeLink IDEA is an IntelliJ IDEA plugin that allows developers to generate and navigate to code links. These code links are URLs that point to a specific line in a specific file in your project.
+CodeLink is an IntelliJ IDEA plugin that allows developers to generate and navigate to code links. These code links are URLs that point to a specific line in a specific file in your project.
 
 <!-- Plugin description -->
-CodeLink IDEA is an IntelliJ IDEA plugin that allows developers to generate and navigate to code links. These code links are URLs that point to a specific line in a specific file in your project.
+CodeLink is an IntelliJ IDEA plugin that allows developers to generate and navigate to code links. These code links are URLs that point to a specific line in a specific file in your project.
 <!-- Plugin description end -->
 
 ## Features
@@ -16,7 +16,7 @@ CodeLink IDEA is an IntelliJ IDEA plugin that allows developers to generate and 
 
 - Using the IDE built-in plugin system:
 
-  <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "CodeLink IDEA"</kbd> >
+  <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "CodeLink"</kbd> >
   <kbd>Install</kbd>
 
 - Manually:
@@ -36,3 +36,24 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## License
 
 This project is licensed under the terms of the MIT license.
+
+## Build and package
+
+You can build a distributable plugin ZIP locally with:
+
+```bash
+./gradlew buildPlugin
+```
+
+The artifact is generated under `build/distributions/*.zip`.
+
+Or use the helper script to optionally bump version and package in one step:
+
+```bash
+# package with current version
+./scripts/package-plugin.sh
+
+# bump version then package
+./scripts/package-plugin.sh 0.0.3
+```
+
